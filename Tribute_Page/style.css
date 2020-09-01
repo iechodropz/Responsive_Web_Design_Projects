@@ -1,0 +1,51 @@
+#img-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	flex-direction: column;
+}
+
+#image {
+	max-width: 100%;
+}
+
+#img-caption {
+	background: lightpink;
+	align-self: stretch;
+	text-align: center;
+}
+
+#title {
+	text-align: center;
+}
+
+#tribute-info {
+	width: 500px;
+	margin: auto;
+}
+
+h2,
+h3 {
+	text-align: center;
+}
+
+body {
+	background: linear-gradient(225deg, purple, yellow);
+}
+
+#title {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 50px;
+}
+
+strong {
+	font-size: 20px;
+}
+
+li {
+	margin: 15px;
+}
