@@ -12,27 +12,27 @@
 		<main>
 			<header>
 				<h1 id="title">Coding Bootcamp</h1>
-				<p id="description">It will help out a lot if you filled out this survey about your experience in a coding bootcamp</p>
+				<p id="description">Thank you so much in advance for filling out this survey :)</p>
 			</header>
 
 			<form id="survey-form">
-				<label for="name" id="name-label">
-					Name:
+				<div>
+					<label for="name" id="name-label">Name</label>
 					<input type="text" id="name" placeholder="Enter your name" required />
-				</label>
+				</div>
 
-				<label for="email" id="email-label">
-					Email:
+				<div>
+					<label for="email" id="email-label">Email</label>
 					<input type="email" id="email" placeholder="Enter your email" required />
-				</label>
+				</div>
 
-				<label for="number" id="nuber-label">
-					Age:
+				<div>
+					<label for="number" id="number-label">Age</label>
 					<input type="number" id="number" min="5" max="150" placeholder="Enter your age" required />
-				</label>
+				</div>
 
-				<label for="dropdown">
-					Which role best describes you?
+				<div>
+					<label for="dropdown">Which role best describes you?</label>
 					<select name="role" id="dropdown" required>
 						<option value="" disabled selected>Select your role</option>
 						<option value="student">Student</option>
@@ -40,34 +40,69 @@
 						<option value="part-time">Working Part-Time</option>
 						<option value="other">Other</option>
 					</select>
-				</label>
+				</div>
 
-				<p>Would you recommend a coding bootcamp?</p>
-				<input type="radio" id="yes" name="user-recommendation" value="yes" />
-				<label for="yes">Yes</label>
-				<input type="radio" id="no" name="user-recommendation" value="no" />
-				<label for="no">No</label>
-				<input type="radio" id="depends" name="user-recommendation" value="depends" />
-				<label for="depends">Depends</label>
+				<div>
+					<p id="user-recommendation">Would you recommend a coding bootcamp?</p>
+					<hr />
+					<label for="yes" id="yes-label">
+						<input type="radio" id="yes" name="user-recommendation" value="yes" />
+						Yes
+					</label>
 
-				<p>What did you learn in the coding bootcamp</p>
-				<input type="checkbox" id="front-end" name="learned" value="front-end" />
-				<label for="front-end">Front-End Development</label>
-				<input type="checkbox" id="back-end" name="learned" value="back-end" />
-				<label for="back-end">Back-End Development</label>
-				<input type="checkbox" id="full-stack" name="learned" value="full-stack" />
-				<label for="full-stack">Full-Stack Development</label>
-				<input type="checkbox" id="data-science" name="learned" value="data-sience" />
-				<label for="data-science">Data Science</label>
-				<input type="checkbox" id="cybersecurity" name="learned" value="cybersecurity" />
-				<label for="cybersecurity">Cybersecurity</label>
-				<input type="checkbox" id="ui-ux" name="learned" value="ui-ux" />
-				<label for="ui-ux">UI/UX</label>
+					<label for="no" id="no-label">
+						<input type="radio" id="no" name="user-recommendation" value="no" />
+						No
+					</label>
 
-				<label for="additional-comments">Any comments or suggestions?</label>
-				<textarea name="comments" id="additional-comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+					<label for="depends" id="depends-label">
+						<input type="radio" id="depends" name="user-recommendation" value="depends" />
+						Depends
+					</label>
+				</div>
 
-				<button type="submit" id="submit">Submit</button>
+				<div>
+					<p id="learned">What did you learn in your coding bootcamp? (check all that apply)</p>
+					<hr />
+					<label for="front-end" id="front-end-label">
+						<input type="checkbox" id="front-end" name="learned" value="front-end" />
+						Front-End Development
+					</label>
+
+					<label for="back-end" id="back-end-label">
+						<input type="checkbox" id="back-end" name="learned" value="back-end" />
+						Back-End Development
+					</label>
+
+					<label for="full-stack" id="full-stack-label">
+						<input type="checkbox" id="full-stack" name="learned" value="full-stack" />
+						Full-Stack Development
+					</label>
+
+					<label for="data-science" id="data-science-label">
+						<input type="checkbox" id="data-science" name="learned" value="data-sience" />
+						Data Science
+					</label>
+
+					<label for="cybersecurity" id="cybersecurity-label">
+						<input type="checkbox" id="cybersecurity" name="learned" value="cybersecurity" />
+						Cybersecurity
+					</label>
+
+					<label for="ui-ux" id="ui-ux-label">
+						<input type="checkbox" id="ui-ux" name="learned" value="ui-ux" />
+						UI/UX
+					</label>
+				</div>
+
+				<div>
+					<label for="additional-comments">Any comments or suggestions?</label>
+					<textarea name="comments" id="additional-comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+				</div>
+
+				<div id="button">
+					<button type="submit" id="submit">Submit</button>
+				</div>
 			</form>
 		</main>
 	</body>

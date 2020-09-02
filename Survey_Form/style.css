@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	background-image: url("https://ubiqum.com/assets/uploads/2019/03/coding_bootcamp.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1,
+p {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	width: 40%;
+	background: rgba(173, 216, 230, 0.8);
+	border-radius: 2%;
+}
+
+#user-recommendation,
+#learned {
+	text-align: left;
+}
+
+#button {
+	align-self: center;
+}
+
+div {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+#name-label {
+	margin-top: 20px;
+}
+
+#yes-label,
+#no-label,
+#depends-label,
+#front-end-label,
+#back-end-label,
+#full-stack-label,
+#data-science-label,
+#cybersecurity-label,
+#ui-ux-label {
+	display: flex;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#additional-comments {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#user-recommendation,
+#learned {
+	margin: 0;
+}
+
+hr {
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+#description {
+	font-size: 30px;
+}
