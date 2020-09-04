@@ -1,0 +1,225 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#header-img {
+	height: 45px;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+a {
+	color: white;
+	font-size: 30px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: white;
+	color: black;
+	overflow: hidden;
+}
+
+p {
+	font-weight: bold;
+	color: red;
+	font-size: 40px;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+}
+
+nav {
+	margin-left: auto;
+	display: flex;
+	width: 500px;
+	justify-content: space-evenly;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#features-icon {
+	margin-top: 50px;
+	width: 150px;
+}
+
+#movies-icon,
+#money-icon,
+#user-friendly-icon {
+	height: 80px;
+	margin-right: 100px;
+}
+
+#features-movies,
+#features-money,
+#features-user-friendly {
+	display: flex;
+	align-items: center;
+	align-self: flex-start;
+	margin: 20px;
+}
+
+#features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+}
+
+.features-description {
+	color: white;
+}
+
+#video {
+	margin-top: 100px;
+}
+
+#pricing {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	margin: 100px;
+}
+
+h3 {
+	color: black;
+	background-color: white;
+	text-align: center;
+	font-size: 30px;
+	margin: 20px;
+}
+
+#basic,
+#standard,
+#premium {
+	background-color: black;
+	padding: 20px;
+}
+
+.price {
+	color: white;
+	text-align: center;
+}
+
+.price-details {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+}
+
+#submit {
+	margin: 10px;
+}
+
+#email {
+	width: 30%;
+}
+
+h4 {
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+}
+
+#description {
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+}
+
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+	}
+
+	#header-text span {
+		display: none;
+	}
+
+	#header-text:after {
+		content: "Netflix";
+	}
+
+	nav {
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+	}
+
+	#features {
+		width: 100vw;
+	}
+
+	#features-icon {
+		margin-top: 200px;
+	}
+
+	#movies-icon,
+	#money-icon,
+	#user-friendly-icon {
+		height: 80px;
+		margin: 0;
+	}
+
+	#features-movies,
+	#features-money,
+	#features-user-friendly {
+		display: flex;
+		margin: 20px;
+		flex-direction: column;
+	}
+
+	#features-movies div p,
+	#features-money div p,
+	#features-user-friendly div p {
+		text-align: center;
+	}
+
+	#how-it-works {
+		width: 100vw;
+	}
+
+	#video {
+		width: 100%;
+	}
+
+	#pricing {
+		flex-direction: column;
+	}
+
+	#form {
+		width: 100vw;
+	}
+
+	h4 {
+		text-align: center;
+	}
+
+	#email {
+		width: 50%;
+	}
+}
