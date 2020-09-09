@@ -81,5 +81,18 @@ li {
 	margin: 10px;
 }
 
-@media {
+@media (max-width: 600px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#navbar {
+		width: 100%;
+		position: static;
+	}
+
+	#main-doc {
+		width: 100%;
+	}
 }
