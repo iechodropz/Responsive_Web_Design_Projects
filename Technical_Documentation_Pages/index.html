@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Technical Documentation Page</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<header id="navbar-header">HTML Documentation</header>
+			<ul class="nav-ul">
+				<li class="nav-li"><a href="#doctype-html-tag" class="nav-link">&lt;!DOCTYPE html&gt;</a></li>
+				<li class="nav-li"><a href="#a-tag" class="nav-link">&lt;a&gt;&lt;/a&gt;</a></li>
+				<li class="nav-li"><a href="#accesskey-attribute" class="nav-link">accesskey=""</a></li>
+				<li class="nav-li"><a href="#body-tag" class="nav-link">&lt;body&gt;&lt;/body&gt;</a></li>
+				<li class="nav-li"><a href="#button-tag" class="nav-link">&lt;button&gt;&lt;/button&gt;</a></li>
+				<li class="nav-li"><a href="#class-attribute" class="nav-link">class=""</a></li>
+				<li class="nav-li"><a href="#form-tag" class="nav-link">&lt;form>&lt;/form></a></li>
+			</ul>
+		</nav>
+
+		<main id="main-doc">
+			<article>
+				<section id="doctype-html-tag" class="main-section">
+					<header class="section-header">&lt;!DOCTYPE html&gt;</header>
+
+					<p class="section-paragraph">Tells the browser that the page is using HTML5</p>
+
+					<hr />
+				</section>
+
+				<section id="a-tag" class="main-section">
+					<header class="section-header">&lt;a&gt;&lt;/a&gt;</header>
+
+					<p class="section-paragraph">You can use a tags to link to content outside of the page.</p>
+
+					<ul>
+						<li class="italic">href=""</li>
+
+						<ul>
+							<li>a tags need a destination web address called an href attribute. They also need anchor text, for example:</li>
+							<ul>
+								<li><code>&lt;a href="https://freecodecamp.org">this links to freecodecamp.org&lt;/a></code></li>
+							</ul>
+						</ul>
+					</ul>
+
+					<ul>
+						<li class="italic">href="#"</li>
+						<ul>
+							<li>Anchor elements can also be used ot create internal links to jump to different sections within a webpage. To create an internal link, you assign a link's href attribute to a hash symbol plus the vlaue of the id attribute for the element that tou want to internally link to, usually further down the page. You then need to add the same id attribute to the element you are linking to. Below is an example of an internal link and its target element.</li>
+							<ul>
+								<li>
+									<code>&lt;a href="#contacts-header">Contacts&lt;/a><br />&lt;h2 id="contacts-header">Contacts&lt;/h2></code>
+								</li>
+							</ul>
+							<li>If no id value is given than the the anchor element can be used as a dead link. Which is useful to make images into links.</li>
+							<li>You can make elements into links by nesting them within an anchor element, for example:</li>
+							<ul>
+								<li><code>&lt;a href="#">&lt;img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera.">&lt/a></code></li>
+							</ul>
+						</ul>
+					</ul>
+
+					<ul>
+						<li class="italic">target="_blank"</li>
+						<ul>
+							<li>This causes the linked document to open in a new window tab.</li>
+						</ul>
+					</ul>
+
+					<hr />
+				</section>
+
+				<section id="accesskey-attribute" class="main-section">
+					<header class="section-header">accesskey=""</header>
+
+					<p class="section-paragraph">HTML offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. This can make navigation more efficient for keyboard-only users.</p>
+
+					<hr />
+				</section>
+
+				<section id="body-tag" class="main-section">
+					<header class="section-header">&lt;body>&lt;/body></header>
+
+					<p class="section-paragraph">The content of the page (what displays for a user) goes into the body tag.</p>
+
+					<hr />
+				</section>
+
+				<section id="button-tag" class="main-section">
+					<header class="section-header">&lt;button>&lt;/button></header>
+
+					<ul>
+						<li class="italic">type="sumbit"</li>
+						<ul>
+							<li>Clicking this button can send the data from the form tag to the URL you specified with your form's action attribute.</li>
+						</ul>
+					</ul>
+
+					<hr />
+				</section>
+
+				<section id="class-attribute" class="main-section">
+					<header class="section-header">class=""</header>
+
+					<p class="section-paragraph">The HTML class attribute is used to specify a class for an HTML element.</p>
+					<p class="section-paragraph">Multiple HTML elements can share the same class.</p>
+					<p class="section-paragraph">You can apply multiple classes to an element using the class attribute and separating each class name with a space, for example:</p>
+					<ul>
+						<li><code>&lt;img class="&lt;class1> &lt;class2>"</code></li>
+					</ul>
+
+					<hr />
+				</section>
+
+				<section id="form-tag" class="main-section">
+					<header class="section-header">&lt;form>&lt;/form></header>
+
+					<p class="section-paragraph">An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+
+					<ul>
+						<li class="italic">action=""</li>
+						<ul>
+							<li><code>&lt;form action="&lt;url-where-you-want-to-submit-form-data>">&lt;/form></code></li>
+						</ul>
+					</ul>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
