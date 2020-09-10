@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#navbar {
+	width: 100%;
+	background-color: black;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+}
+
+.nav-link {
+	color: white;
+	text-align: right;
+	padding: 15px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+	background-color: white;
+	color: black;
+	margin: 0;
+}
+
+#welcome-section {
+	height: 100vh;
+	width: 100%;
+}
+
+#about {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 35px;
+	font-family: sans-serif;
+}
+
+#about-description {
+	position: absolute;
+	width: 100%;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#projects {
+	width: 100%;
+	background-color: black;
+}
+
+#projects-section-title {
+	text-align: center;
+	color: white;
+	font-family: sans-serif;
+	font-size: 30px;
+	margin: 100px;
+	font-weight: normal;
+}
+
+#projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 350px));
+	grid-gap: 100px;
+	margin-bottom: 100px;
+	justify-content: center;
+}
+
+.project-tile {
+	width: 100%;
+	text-decoration: none;
+}
+
+.project-image {
+	width: 100%;
+	display: block;
+}
+
+.project-title {
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #303841;
+}
+
+#contact-header {
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+#profile-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	margin-bottom: 100px;
+}
+
+#github-logo {
+	width: 10%;
+}
+
+@media {
+}
