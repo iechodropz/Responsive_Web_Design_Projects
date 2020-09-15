@@ -1,2 +1,2 @@
-# Responsive Web Design Project
+# Responsive Web Design Projects
 
