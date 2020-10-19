@@ -90,6 +90,7 @@ li {
 	#navbar {
 		width: 100%;
 		position: static;
+		border-right: none;
 	}
 
 	#main-doc {

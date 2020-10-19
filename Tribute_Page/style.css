@@ -1,3 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 #img-div {
 	display: flex;
 	align-items: center;
@@ -8,6 +14,7 @@
 
 #image {
 	max-width: 100%;
+	width: 100%;
 }
 
 #img-caption {
@@ -48,4 +55,14 @@ strong {
 
 li {
 	margin: 15px;
+}
+
+@media (max-width: 400px) {
+	h2 {
+		max-width: 100%;
+	}
+
+	#tribute-info {
+		width: 100vw;
+	}
 }
