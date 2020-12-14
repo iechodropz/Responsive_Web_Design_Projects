@@ -6,7 +6,6 @@
 #navbar {
 	display: flex;
 	flex-direction: column;
-	width: 20%;
 	border-right: 2px solid black;
 	border-bottom: 2px solid black;
 	position: sticky;
@@ -24,15 +23,16 @@
 	margin: 0;
 }
 
-#navbar-header,
+.navbar-header,
 .nav-li {
 	text-align: center;
 	padding: 10px;
 }
 
-#navbar-header {
+.navbar-header {
 	font-size: 30px;
 	font-weight: bold;
+	max-width: 100%;
 }
 
 .nav-link {
